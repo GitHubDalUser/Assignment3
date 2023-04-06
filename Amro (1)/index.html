@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Amro's Hub</title>
+        <link rel="icon" type="image/x-icon" href="Images/ghamriny-(White font transparent background).png">
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!-- This style is for the Welcome message .-->
+        
+        <style>
+            #welcome-message {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 10%;
+              background-color: #4CAF50;
+              color: white;
+              text-align: center;
+              padding: 10px;
+            }
+          </style>
+
+          <!-- This script is for the Welcome message for the website.(Notification)-->
+
+          <script>
+            window.onload = function() {
+              var welcomeMessage = document.getElementById("welcome-message");
+              welcomeMessage.style.display = "block";
+              setTimeout(function() {
+                welcomeMessage.style.display = "none";
+              }, 3500);
+            };
+          </script>
+          
+    </head>
+    <body>
+      
+          <!--This section of code is for the navigation bar.-->
+       
+        <header>
+        <div class="navbar" >
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+        
+           <!--These are the buttons for the color change palette.-->
+
+            <img src="Images/ghamriny-(White font transparent background).png" alt="logo" class="img">
+            <div class="colorchanger">
+                <h3>Color Scheme:</h3>
+                <button onclick="setColorScheme('scheme1')">A</button>
+                <button onclick="setColorScheme('scheme2')">B</button>
+                <button onclick="setColorScheme('scheme3')">C</button>
+              </div>
+
+            <h1 class="aboutmetitle">
+                About Me 
+            </h1>
+
+        </header>
+        <main>
+            
+            <!--This section of code is for the Introduction paragraph.-->
+           
+            <div id="welcome-message">Welcome to our website!</div>
+            <div class="flexcontainer">
+                <div class="boxes">
+                    <h2>Introduction</h2>
+                    <p>Hello everyone, welcome to my website. This website will focus on informing you about me and my music hobby.</p>
+                    <p>First of all lets get to know more about me. I'm a 17 year old Egyptian and Lebanese who lived and graduated in the United Arab Emirates.</p>
+                    <p>My main hobby which keeps me busy on the side is producing and making music. My favorite genre is "Hip-Hop" and "R&B."</p>
+                    <P>I started making music and found my passion in it because I always grew up with music around me. It always made me feel comfortable and have something to relate to.</P>
+                </div>
+
+                <!--This section of code is for the Education paragraph.-->
+
+                <div class="boxes">
+                    <h2>Eductation</h2>
+                    <ul>
+                      <li>Highschool: AlMawakeb School Garhoud <a href="https://almawakeb.sch.ae/">(AMG)</a></li>
+                      <li>Current Education: Dalhousie University <a href="https://dal.ca/">(DAL)</a></li>
+                  </ul>
+                    <p>I currently live in Novascotia, Canada where I am taking applied computer science in Dalhousie University.</p>
+                    <p>The reason I'm choosing to major in CS is because I love the idea of coding and computer systems.</p>
+                    <p>After graduating and majoring in CS, I want to persue and spealize in cyber security programs linked with banks.</p>
+                </div>
+
+                <!--This section of code is for the hobbies paragraph.-->
+
+                <div class="boxes">
+                    <h2>Depth Into My Hobbies</h2>
+                    <ul>
+                        <li>Football</li>
+                        <li>Music</li>
+                        <li>Graphic Designing For Games</li>
+                    </ul>
+                    <p>[Football] Growing up, I've always loved playing football with my cousins and my highschool friends.</p>
+                    <p>[Music] Music is a big part of my life, I love applying my creativity it as a message in my production.</p>
+                    <p>[Graphic Designing] Aside from my music production, I've always loved 3D modeling and rendering scenes for ganes,</p>
+                </div>
+            </div>
+
+            <!--This is the Photo Gallery of my favorite albumns.-->
+
+              <div class="gallery">
+                  <a target="_blank" href="Images/Damn.png">
+                    <img src="Images/Damn.png" alt="Damn">
+                  </a>
+                  <div class="desc">Kendrick Lamar's Album "Damn."</div>
+                </div>
+              
+                <div class="gallery">
+                  <a target="_blank" href="Images/GoodKid.png">
+                    <img src="Images/GoodKid.png" alt="GoodKid">
+                  </a>
+                  <div class="desc">Kendrick Lamar's Album "good kid maad City."</div>
+                </div>
+              
+                <div class="gallery">
+                  <a target="_blank" href="Images/Views.png">
+                    <img src="Images/Views.png" alt="Views" width="600" height="400">
+                  </a>
+                  <div class="desc">Drake's Album "Views."</div>
+                </div>
+              
+                <div class="gallery">
+                  <a target="_blank" href="Images/Yeezus.png">
+                    <img src="Images/Yeezus.png" alt="Yeezus" width="600" height="400">
+                  </a>
+                  <div class="desc">Kanye West's Album "Yeezus."</div>
+                </div>
+
+            <!--Color Scheme Script (Color Change)-->
+
+            <script>
+                function setColorScheme(scheme) {
+                  if (scheme === 'scheme1') {
+                    
+                    document.body.style.color = '#FFFFFF';
+                    document.body.style.backgroundColor = "black";
+
+                  } else if (scheme === 'scheme2') {
+                    
+                    document.body.style.color = '#000000'; 
+                    document.body.style.backgroundColor = "green";
+                    
+                  } else if (scheme === 'scheme3') {
+                    
+                    document.body.style.color = '#0000FF'; 
+                    document.body.style.backgroundColor = "red";
+                  }
+                }
+              </script>
+        </main>
+    </body>
+</html>

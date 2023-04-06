@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Amro's Hub</title>
+        <link rel="icon" type="image/x-icon" href="download.jpg">
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar" >
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--These are the buttons for the color change palette.-->
+
+            <img src="Images/ghamriny-(White font transparent background).png" alt="logo" class="img">
+            <div class="colorchanger">
+                <h3>Color Scheme:</h3>
+                <button onclick="setColorScheme('scheme1')">A</button>
+                <button onclick="setColorScheme('scheme2')">B</button>
+                <button onclick="setColorScheme('scheme3')">C</button>
+              </div>
+            </header>
+
+            <!--Hero Image Section-->
+
+            <div class="hero-image">
+                <div class="hero-text">
+                  <h1 style="font-size:40px">My name is Amro Elghamriny</h1>
+                  <p>And here's my music.</p>
+                </div>
+              </div>
+
+             <div class="gridcontainer">
+                <div class="header">Header</div>
+                <div class="content-large"><div class="soundcloudimg">   
+                <img src="Images/419679-1x1_SoundCloudLogo_cloudmark-f5912b-medium-1645807040-removebg-preview.png" alt="logo" width="85" height="85">                 
+            </div>
+
+            <section>
+                <h2>My Music</h2>
+                <p>My music revolves around the biggest experiences I've had it in my life that has made me who I am.</p>
+                <div class="soundcloudlink">
+                    <a href="https://soundcloud.com/22face">Here's a link to my soundcloud</a>
+                </div>
+                <p>Here's a sample of my work:</p>
+                
+                <!--This section of code is for the MP3 file.-->
+                
+                <audio controls>
+                    <source src="Audio/chaos activity.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+
+            <section>
+                <p>Chaos Activity relates to one of the experiences I had. It was when I got into a fight and all my friends showed up and defended me.</p>
+            </section>
+
+            <!--This is a table showcasing my tracks for my future album drop. :D-->
+
+            <div class="content-small">
+            <section>
+                <h2>Future Album</h2>
+                <p>This is a table showing you my future album and track names.</p>
+                <table>
+                    <tr id="tableRow">
+                      <th>Tracks</th>
+                      <th>Length</th>
+                    </tr>
+                    <tr>
+                      <td>paris</td>
+                      <td>3:26</td>
+                    </tr>
+                    <tr>
+                      <td>love</td>
+                      <td>2:12</td>
+                    </tr>
+                    <tr>
+                      <td>2AM in Halifax</td>
+                      <td>7:54</td>
+                      </tr>
+                </table>
+            </section>
+            </div>
+
+            <div class="content-small"><section>
+                <h2>My Inspiration</h2>
+                <p>This video inspires me to keep making music.</p>
+                <div class="kendrickvideo">
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/blvcswxmPCU">
+                    </iframe>
+                </div>
+
+            </section>
+
+            <div class="content-small">
+            <section>
+                <h2>Here's a snippet of a sample breakdown made by Mike Dean on Kanye's graduation album.</h2>
+                <video controls>
+                    <source src="Video/Y2Mate.is - Sample Breakdown Kanye West - Stronger-dj5dHzOScTM-480p-1656774614738.mp4">
+                </video>
+            </section>
+        </div>
+
+        <!--This section is a list of my favorite artists.-->
+
+        <section>
+            <h2>Favorite Artists</h2>
+            <p>My favorite artists are:</p>
+            <div class="twitter-container">
+                <ol>
+                    <li><a href="https://www.youtube.com/@DrakeOfficial">Drake</a></li>
+                    <ul>
+                        <li><a href="https://twitter.com/Drake">Drake's Twitter</a></li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/channel/UCmHhviensDlGQeU8Yo80zdg">Dr Dre</a></li>
+                    <ul>
+                        <li><a href="https://twitter.com/drdre?lang=en">Dr Dre's Twitter</a></li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ">Kendrick Lamar</a></li>
+                    <ul>
+                        <li><a href="https://twitter.com/kendricklamar">Kendrick's Twitter</a></li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/@therealmikedean">Mike Dean</a></li>
+                    <ul>
+                        <li><a href="https://twitter.com/therealmikedean?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Mike Dean's Twitter</a></li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">Travis Scott</a></li>
+                    <ul>
+                        <li><a href="https://twitter.com/trvisxx?lang=en">Travis Scott's Twitter</a></li>
+                    </ul>
+                </ol>
+            </div>
+            <p>The reason those artist stand out from everyone and matches my energy is becaues they all tell their stories in their production. They use their creativiy to empower their messages to their audiences which is something I can relate to.</p>
+        </section>
+        <section>
+        </div>
+        </div>
+
+        <!--Color Scheme Script (Color Change)-->
+        
+        <script>
+            function setColorScheme(scheme) {
+              if (scheme === 'scheme1') {
+                
+                document.body.style.color = '#FFFFFF';
+                document.body.style.backgroundColor = "black";
+
+              } else if (scheme === 'scheme2') {
+                
+                document.body.style.color = '#000000'; 
+                document.body.style.backgroundColor = "green";
+                
+              } else if (scheme === 'scheme3') {
+                
+                document.body.style.color = '#0000FF'; 
+                document.body.style.backgroundColor = "red";
+              }
+            }
+          </script>
+
+          <!--Table-->
+
+          <script>
+            document.getElementById('tableRow').addEventListener('click', function() {
+            this.style.backgroundColor = 'red';
+            });
+          </script>
+
+    </body>
+</html>
